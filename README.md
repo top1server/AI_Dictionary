@@ -17,5 +17,6 @@
   * [Preview](#preview)
 - [2. Modes in app](#modes-in-app)
 - [3. Features](#features)
+  * [Inheritance hierarchy](#inheritance-hierarchy)
 
 
