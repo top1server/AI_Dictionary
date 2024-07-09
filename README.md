@@ -12,9 +12,9 @@
  + ***Class code subject:*** H2324 INT2204 50
 ## ***III.Table of content***
 - [1. Description](#description)
-  * [Application description and instruction](#game-description-and-instruction)
-  * [Control / điều khiển](#control)
-  * [Preview / góc nhìn](#preview)
+  * [Application description and instruction](#application-description-and-instruction)
+  * [Control](#control)
+  * [Preview](#preview)
 - [Objects In game / các đối tượng trong game](#objects-in-game)
   * [a. Các loại lá bài](#acác-loại-lá-bài)
   * [b. Cách chơi](#bcách-chơi)
