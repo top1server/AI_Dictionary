@@ -6,6 +6,7 @@
  + ***This project is a large assignment to get points for the Object - Oriented Programming (OOP) subject***
 ## ***II. Author***
  + UNIVERSITY OF ENGINEERING AND TECHNOLOGY - VIETNAM NATIONAL UNIVERSITY
- + ***Name***: Mai Tien Dung \                    ***Student code: 23020025***
- + ***Class***: QH2023-I/CQ-C-B
+ + ***Name:*** Mai Tiến Dũng 
+ + ***Student code:*** 23020025
+ + ***Class:*** QH2023-I/CQ-C-B
  + 
