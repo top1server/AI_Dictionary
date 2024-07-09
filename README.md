@@ -1,1 +1,1 @@
-# **Artificial Intelligence**
+# **🤖Artificial Intelligence Dictionary**
