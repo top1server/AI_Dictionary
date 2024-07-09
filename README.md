@@ -1,1 +1,3 @@
- # **ARTIFICIAL INTELLIGENCE DICTIONARY 🧠**
+  # **ARTIFICIAL INTELLIGENCE DICTIONARY 🧠**
+  
+ ## **Introduction**
