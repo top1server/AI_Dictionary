@@ -1,3 +1,5 @@
   # **ARTIFICIAL INTELLIGENCE DICTIONARY 🧠**
   
- ## ***Introduction***
+ ## ***I. Introduction***
+ + A graphical interface version of the English-Vietnamese dictionary application
+ + Mainly written in java code and JavaFX framework
