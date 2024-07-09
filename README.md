@@ -15,7 +15,7 @@
   * [Application description and instruction](#application-description-and-instruction)
   * [Control](#control)
   * [Preview](#preview)
-- [Objects In game / các đối tượng trong game](#objects-in-game)
+- [Objects In app](#objects-in-app)
   * [a. Các loại lá bài](#acác-loại-lá-bài)
   * [b. Cách chơi](#bcách-chơi)
 - [Setup / cài đặt](#setup)
