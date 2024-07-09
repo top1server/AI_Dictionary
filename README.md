@@ -15,8 +15,7 @@
   * [Application description and instruction](#application-description-and-instruction)
   * [Control](#control)
   * [Preview](#preview)
-- [2. Objects In app](#objects-in-app)
-  * [a. Inheritance hierarchy](#a.Inheritance-hierarchy)
-  * [b. ](#bcách-chơi)
-- [Setup](#setup)
+- [2. Modes in app](#modes-in-app)
+- [3. Features](#features)
+
 
