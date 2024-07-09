@@ -10,7 +10,7 @@
  + ***Student code:*** 23020025
  + ***Class:*** QH2023-I/CQ-C-B
  + ***Class code subject:*** H2324 INT2204 50
-# Table of content / phụ lục
+## ***III.Table of content***
 - [Description / mô tả game](#description)
   * [Game description and instruction / mô tả game và cách xây dụng](#game-description-and-instruction)
   * [Control / điều khiển](#control)
