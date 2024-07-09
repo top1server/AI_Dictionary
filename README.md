@@ -1,1 +1,1 @@
- # **🤖**
+ # **ARTIFICIAL INTELLIGENCE DICTIONARY 🧠**
