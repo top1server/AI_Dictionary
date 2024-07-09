@@ -5,7 +5,7 @@
  + Mainly written in Java code and JavaFX (GUI) framework
  + ***This project is a large assignment to get points for the Object - Oriented Programming (OOP) subject***
 ## ***II. Author***
- + **UNIVERSITY OF ENGINEERING AND TECHNOLOGY - VIETNAM NATIONAL UNIVERSITY** ~ **UET - VNU**
+ + **UNIVERSITY OF ENGINEERING AND TECHNOLOGY - VIETNAM NATIONAL UNIVERSITY**
  + ***Name:*** Mai Tien Dung
  + ***Student code:*** 23020025
  + ***Class:*** QH2023-I/CQ-C-B
