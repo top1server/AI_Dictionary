@@ -11,8 +11,8 @@
  + ***Class:*** QH2023-I/CQ-C-B
  + ***Class code subject:*** H2324 INT2204 50
 ## ***III.Table of content***
-- [Description / mô tả game](#description)
-  * [Game description and instruction / mô tả game và cách xây dụng](#game-description-and-instruction)
+- [Description](#description)
+  * [Application description and instruction](#game-description-and-instruction)
   * [Control / điều khiển](#control)
   * [Preview / góc nhìn](#preview)
 - [Objects In game / các đối tượng trong game](#objects-in-game)
