@@ -1,4 +1,4 @@
-module App.ai_dictionary {
+module app.ai_dictionary {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -11,6 +11,6 @@ module App.ai_dictionary {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens App.ai_dictionary to javafx.fxml;
-    exports App.ai_dictionary;
+    opens app.ai_dictionary to javafx.fxml;
+    exports app.ai_dictionary;
 }

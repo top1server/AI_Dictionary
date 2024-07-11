@@ -1,4 +1,4 @@
-package App.ai_dictionary;
+package app.ai_dictionary;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class RunApp extends Application {
+public class Run extends Application {
 
     @Override
     public void start(Stage primaryStage) {
