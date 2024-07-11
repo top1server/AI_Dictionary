@@ -11,6 +11,6 @@ module app.ai_dictionary {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens app.ai_dictionary to javafx.fxml;
-    exports app.ai_dictionary;
+    opens app.Run to javafx.fxml;
+    exports app.Run;
 }
