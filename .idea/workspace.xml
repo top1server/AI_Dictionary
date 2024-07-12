@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="037c9aea-ef85-4970-9687-1b4d3fc0b1d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/Dictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/TrieNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/Word.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/FileActivities/MySQLConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/DictionaryCommandLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/DictionaryManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/DataStructure/TrieNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/DataStructure/TrieNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/DataStructure/WordTrie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/DataStructure/Trie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,22 +47,28 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AhoCorasick.executor": "Run",
+    "Application.DictionaryCommandLine.executor": "Run",
     "Application.HelloApplication.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.MySQLConnection.executor": "Run",
     "Application.Run.executor": "Run",
     "Application.Trie.executor": "Run",
     "Application.WordTrie.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Java/project/AI_Dictionary/src/main/resources/sql/mysql-connector-j-9.0.0.jar",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\project\AI_Dictionary\src\main\resources\image" />
       <recent name="D:\Java\project\AI_Dictionary" />
       <recent name="D:\Java\project\AI_Dictionary\.mvn" />
       <recent name="D:\Java\project\AI_Dictionary\.mvn\wrapper" />

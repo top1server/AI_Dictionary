@@ -10,6 +10,7 @@ module app.ai_dictionary {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.sql;
 
     opens app.Run to javafx.fxml;
     exports app.Run;

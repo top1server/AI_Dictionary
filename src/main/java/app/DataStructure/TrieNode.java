@@ -7,10 +7,10 @@ import java.util.*;
 public class TrieNode {
     public TrieNode[] children;
     private boolean isEndOfWord;
-    private List<Word> words; // Danh sách các từ có thể lưu tại nút lá
+    private final List<Word> words;    // List words can be saved at leaf note
 
     public TrieNode() {
-        this.children = new TrieNode[26]; // 26 chữ cái trong bảng chữ cái tiếng Anh
+        this.children = new TrieNode[26]; // 26 english's alphabet
         this.isEndOfWord = false;
         this.words = new ArrayList<>();
     }
