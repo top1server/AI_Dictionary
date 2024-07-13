@@ -1,6 +1,6 @@
-package app.DataStructure;
+package app.SourceCode.DataStructure;
 
-import app.SourceCode.Word;
+import app.SourceCode.Fundamental.Word;
 
 import java.util.*;
 
@@ -153,6 +153,17 @@ public class Trie {
                 mergeTrieNodes(node1.getChild(ch), childNode2);
             }
         }
+    }
+
+    /**
+     * print all word in trie.
+     *
+     * @return list all words in the trie.
+     */
+    public List<Word> printAllWords() {
+        List<Word> words = new ArrayList<>();
+        collectWords(root, words);
+        return words;
     }
 
 }

@@ -1,39 +1,44 @@
 package app.Run;
 
 import javafx.application.Application;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+import javafx.scene.control.ScrollBar;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-
-
-import java.io.InputStream;
-
-public class Run extends Application {
+public class Run extends Application{
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // Load icon
-        InputStream iconStream = getClass().getResourceAsStream("/image/icon_app.png");
-        assert iconStream != null;
-        Image icon = new Image(iconStream);
+        ScrollBar s = new ScrollBar();
 
-        // Set icon for the primary stage
-        primaryStage.getIcons().add(icon);
+        // Set the ScrollBar orientation and range
+        s.setOrientation(javafx.geometry.Orientation.VERTICAL);
+        s.setMin(0);
+        s.setMax(100);
 
-        // Create the root layout (in this case, a StackPane)
         StackPane root = new StackPane();
-        Scene scene = new Scene(root, 800, 600);
+        root.getChildren().add(s);
+        Scene scene = new Scene(root, 1280, 720);
 
-        // Add your application setup code here...
+        s.valueProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+                // Check if the scrollbar value is more than half of its max value
+                if (newValue.doubleValue() > s.getMax() / 2) {
+                    // Change to dark theme
+                    scene.getRoot().setStyle("-fx-background-color: #2e2e2e; -fx-text-fill: white;");
+                } else {
+                    // Change to light theme
+                    scene.getRoot().setStyle("");
+                }
+            }
+        });
 
-        // Set the scene and show the primary stage
-        primaryStage.setTitle("JavaFX Application with Icon");
         primaryStage.setScene(scene);
+        primaryStage.setTitle("ScrollBar Example");
         primaryStage.show();
     }
 
@@ -41,4 +46,3 @@ public class Run extends Application {
         launch(args);
     }
 }
-

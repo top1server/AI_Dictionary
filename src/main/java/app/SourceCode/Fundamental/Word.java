@@ -1,4 +1,4 @@
-package app.SourceCode;
+package app.SourceCode.Fundamental;
 
 public class Word {
     private String word_target;

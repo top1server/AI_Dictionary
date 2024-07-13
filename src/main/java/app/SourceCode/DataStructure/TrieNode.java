@@ -1,6 +1,6 @@
-package app.DataStructure;
+package app.SourceCode.DataStructure;
 
-import app.SourceCode.Word;
+import app.SourceCode.Fundamental.Word;
 
 import java.util.*;
 
