@@ -1,5 +1,6 @@
 abandon	bỏ rơi
 abate	giảm bớt
+abate	giảm bớt
 absolve	tha thứ
 absorb	hấp thụ
 absurd	ngu xuẩn
@@ -9,9 +10,12 @@ acerbic	chua chát
 acoustic	âm thanh
 adapt	thích nghi
 adherent	người ủng hộ
+adherent	người ủng hộ
 admirable	đáng kính ngưỡng
 admonish	khiển trách
 adore	yêu thích
+adore	yêu thích
+adorn	trang trí
 adorn	trang trí
 adroit	khéo léo
 adulate	tán thưởng
@@ -72,6 +76,7 @@ bake	nướng
 balance	cân bằng
 bald	đầu trọc
 ball	bóng
+banana	quả chuối
 banana	quả chuối
 banner	biểu ngữ
 battle	trận đánh
@@ -616,9 +621,14 @@ hotel	khách sạn
 house	nhà
 house	nhà
 humble	khiêm tốn
+humble	khiêm tốn
+humor	hài hước
 humor	hài hước
 hunt	săn
+hunt	săn
 hurry	vội vã
+hurry	vội vã
+hurt	làm tổn thương
 hurt	làm tổn thương
 husband	chồng
 husband	chồng
@@ -633,8 +643,10 @@ idiom	thành ngữ
 idiom	thành ngữ
 igloo	Căn lều tuyết
 ignorant	không biết
+ignorant	không biết
 ignore	phớt lờ
 illness	bệnh tật
+illuminate	làm sáng tỏ
 illuminate	làm sáng tỏ
 illustrate	minh họa
 illustration	minh họa
@@ -644,27 +656,48 @@ imagine	tưởng tượng
 imitate	bắt chước
 impact	tác động
 impatient	nôn nóng
+impatient	nôn nóng
 implement	thực hiện
+implement	thực hiện
+implement	thực hiện
+implicit	ngụ ý
 implicit	ngụ ý
 import	nhập khẩu
 importance	quan trọng
+importance	quan trọng
 impose	áp đặt
+impose	áp đặt
+improve	cải thiện
+improve	cải thiện
 improve	cải thiện
 inch	inch
 inch	inch
 incident	sự cố
 include	bao gồm
 incorporate	tích hợp
+incorporate	tích hợp
 increase	tăng cường
+incredible	đáng kinh ngạc
 incredible	đáng kinh ngạc
 indeed	thật sự
 indicate	chỉ ra
+indicate	chỉ ra
+indicate	chỉ ra
+individual	cá nhân
+individual	cá nhân
 individual	cá nhân
 industry	ngành công nghiệp
+industry	ngành công nghiệp
+industry	ngành công nghiệp
 inevitable	không thể tránh khỏi
+inevitable	không thể tránh khỏi
+infinite	vô tận
 infinite	vô tận
 inform	thông báo
 information	thông tin
+information	thông tin
+ingredient	nguyên liệu
+ingredient	nguyên liệu
 ingredient	nguyên liệu
 inhabit	cư trú
 inhabit	cư trú
@@ -676,10 +709,20 @@ inject	tiêm
 innovate	đổi mới
 input	đầu vào
 inquire	hỏi
+inquire	hỏi
+insert	chèn
 insert	chèn
 inspect	kiểm tra
+inspect	kiểm tra
+inspect	kiểm tra
+install	lắp đặt
+install	lắp đặt
 install	lắp đặt
 instance	ví dụ
+instance	ví dụ
+instance	ví dụ
+integrate	tích hợp
+integrate	tích hợp
 integrate	tích hợp
 intellect	trí tuệ
 intellect	trí tuệ
@@ -695,13 +738,20 @@ interest	sự quan tâm
 interface	giao diện
 interface	giao diện
 interpret	phiên dịch
+interpret	phiên dịch
+interrupt	làm gián đoạn
 interrupt	làm gián đoạn
 intervene	can thiệp
 intervene	can thiệp
 introduce	giới thiệu
+introduce	giới thiệu
+invest	đầu tư
 invest	đầu tư
 involve	liên quan
+involve	liên quan
 isolate	cô lập
+isolate	cô lập
+issue	vấn đề
 issue	vấn đề
 jacket	áo khoác
 jacket	áo khoác
@@ -710,33 +760,124 @@ jazz	nhạc jazz
 jeans	quần jean
 jeans	quần jean
 jeep	xe jeep
+jeep	xe jeep
+jelly	gói nước mâm xôi
 jelly	gói nước mâm xôi
 jewel	viên ngọc
+jewel	viên ngọc
+jog	chạy nhẹ nhàng
 jog	chạy nhẹ nhàng
 joint	khớp
+joint	khớp
+journal	nhật ký
 journal	nhật ký
 journey	hành trình
+journey	hành trình
+judge	thẩm phán
 judge	thẩm phán
 juice	nước ép
+juice	nước ép
+jump	nhảy
 jump	nhảy
 junction	ngã tư
+junction	ngã tư
+jungle	rừng nhiệt đới
 jungle	rừng nhiệt đới
 junior	học sinh năm thứ ba
+junior	học sinh năm thứ ba
+jury	ban giám khảo
 jury	ban giám khảo
 justify	bào chữa
+justify	bào chữa
+kangaroo	kanguru
+kangaroo	kanguru
+kangaroo	kanguru
+kangaroo	kanguru
+kangaroo	kanguru
 kangaroo	kanguru
 kettle	ấm đun nước
+kettle	ấm đun nước
+kettle	ấm đun nước
+kettle	ấm đun nước
+kettle	ấm đun nước
+kettle	ấm đun nước
+key	chìa khóa
+key	chìa khóa
+key	chìa khóa
+key	chìa khóa
+key	chìa khóa
 key	chìa khóa
 keyboard	bàn phím
+keyboard	bàn phím
+keyboard	bàn phím
+keyboard	bàn phím
+keyboard	bàn phím
+keyboard	bàn phím
+kiss	hôn
+kiss	hôn
+kiss	hôn
+kiss	hôn
+kiss	hôn
 kiss	hôn
 knee	đầu gối
+knee	đầu gối
+knee	đầu gối
+knee	đầu gối
+knee	đầu gối
+knee	đầu gối
+knife	con dao
+knife	con dao
+knife	con dao
+knife	con dao
+knife	con dao
 knife	con dao
 knight	hiệp sĩ
+knight	hiệp sĩ
+knight	hiệp sĩ
+knight	hiệp sĩ
+knight	hiệp sĩ
+knight	hiệp sĩ
+knit	đan len
+knit	đan len
+knit	đan len
+knit	đan len
+knit	đan len
 knit	đan len
 knock	gõ cửa
+knock	gõ cửa
+knock	gõ cửa
+knock	gõ cửa
+knock	gõ cửa
+knock	gõ cửa
+knot	nút
+knot	nút
+knot	nút
+knot	nút
+knot	nút
 knot	nút
 know	biết
+know	biết
+know	biết
+know	biết
+know	biết
+know	biết
 knowledge	kiến thức
+knowledge	kiến thức
+knowledge	kiến thức
+knowledge	kiến thức
+knowledge	kiến thức
+knowledge	kiến thức
+knowledge	kiến thức
+knowledge	kiến thức
+knowledge	kiến thức
+knowledge	kiến thức
+knowledge	kiến thức
+knowledge	kiến thức
+koala	gấu túi
+koala	gấu túi
+koala	gấu túi
+koala	gấu túi
+koala	gấu túi
 koala	gấu túi
 labor	lao động
 laboratory	phòng thí nghiệm
@@ -827,7 +968,7 @@ log	cabin nhà gỗ
 loneliness	sự cô đơn
 lonely	cô đơn
 long	dài
-long distance relationship mối quan hệ xa cách
+long-distance	relationship mối quan hệ xa cách
 look	nhìn
 lookalike	người giống hệt
 lose	mất
@@ -1119,11 +1260,18 @@ omit	bỏ sót
 on	trên
 on	trên
 once	một lần
+once	một lần
+one	một
 one	một
 ongoing	tiếp diễn
+ongoing	tiếp diễn
+onion	củ hành
 onion	củ hành
 online	trực tuyến
+online	trực tuyến
 only	chỉ
+only	chỉ
+open	mở
 open	mở
 operate	vận hành
 operate	vận hành
@@ -1369,11 +1517,25 @@ quantity	lượng
 quarantine	cách ly
 quarter	phần tư
 quasar	ngôi sao quasar
+quasar	ngôi sao quasar
+quasi-guarantee	bảo đảm giả tưởng
+quasi-guarantee	bảo đảm giả tưởng
+quasi-intelligence	thông minh giả tưởng
+quasi-intelligence	thông minh giả tưởng
+quasi-military	quân sự giả tưởng
+quasi-military	quân sự giả tưởng
+quasi-unanimous	đồng lòng giả tưởng
+quasi-unanimous	đồng lòng giả tưởng
 quay	quay
+quay	quay
+queasy	dễ buồn nôn
 queasy	dễ buồn nôn
 queen	nữ hoàng
 queenless	không có nữ hoàng
+queenless	không có nữ hoàng
 quell	kìm chế
+quell	kìm chế
+quench	dập tắt
 quench	dập tắt
 queried	đặt câu hỏi
 query	câu hỏi
@@ -1519,7 +1681,7 @@ rest	nghỉ ngơi
 restaurant	nhà hàng
 restore	khôi phục
 restrict	hạn chế
-result  kết quả
+result	kết quả
 resume	tiếp tục
 retain	giữ lại
 retire	nghỉ hưu
@@ -1532,11 +1694,24 @@ reward	thưởng
 rhetoric	hùng biện
 rhyme	vần
 rhythm	nhịp
-rice    cơm
-rich    giàu có
-ride    cưỡi
-ridge   đỉnh núi
-rifle   súng trường
-right   đúng
-rigid   cứng nhắc
+rice	cơm
+rich	giàu có
+ride	cưỡi
+ridge	đỉnh núi
+rifle	súng trường
+right	đúng
+rigid	cứng nhắc
 rim	mép
+ring	nhẫn
+rise	đứng lên
+risk	rủi ro
+ritual	nghi thức
+rival	đối thủ
+river	sông
+road	đường
+rubber	cục tẩy
+zebra	Con ngựa vằn
+zodiac	cung hoàng đạo
+zoo	Sở thú
+apple	Quả táo
+
