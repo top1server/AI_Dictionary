@@ -11,7 +11,7 @@ public class Word {
     /**
      * word constructor method.
      *
-     * @param word_target String
+     * @param word_target  String
      * @param word_explain String
      */
     public Word(String word_target, String word_explain) {

@@ -32,6 +32,16 @@ public class Trie {
         node.setEndOfWord(true);
     }
 
+    /**
+     * insert from ArrayList method.
+     * @param wordList List
+     */
+    public void insert(ArrayList<Word> wordList) {
+        for (Word word: wordList) {
+            insert(word);
+        }
+    }
+
 
     /**
      * search words have String prefix from trie method.
@@ -57,7 +67,8 @@ public class Trie {
 
     /**
      * collect word from trie method.
-     * @param node TrieNode
+     *
+     * @param node    TrieNode
      * @param results List word
      */
     private void collectWords(TrieNode node, List<Word> results) {
@@ -85,9 +96,8 @@ public class Trie {
      * main delete method.
      *
      * @param current TrieNode
-     * @param word Word
-     * @param index int
-     *
+     * @param word    Word
+     * @param index   int
      * @return Trie were deleted word.
      */
     private boolean delete(TrieNode current, String word, int index) {
