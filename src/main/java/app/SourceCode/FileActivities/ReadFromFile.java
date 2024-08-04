@@ -62,7 +62,8 @@ public class ReadFromFile {
 
                 //Loop for read file
                 while(resultSet.next()) {
-                    String word_target = resultSet.getString("target");
+                    String word_target = resultSet.getString("target")
+                            .replaceAll("-", "");
                     String word_explain = resultSet.getString("definition");
                     word_explain = word_explain
                             .replaceAll("<I><Q>", "")

@@ -10,17 +10,22 @@ public class TrieNode {
     private final List<Word> words;    // List words can be saved at leaf note
 
     public TrieNode() {
-        this.children = new TrieNode[26]; // 26 english's alphabet
+        this.children = new TrieNode[27]; // 26 english's alphabet
         this.isEndOfWord = false;
         this.words = new ArrayList<>();
     }
 
     public TrieNode getChild(char ch) {
+        if (ch == ' ') return children[26];
         return children[ch - 'a'];
     }
 
     public void setChild(char ch, TrieNode node) {
-        children[ch - 'a'] = node;
+        if (ch == ' ') {
+            children[26] = node;
+        } else {
+            children[ch - 'a'] = node;
+        }
     }
 
     public boolean isEndOfWord() {

@@ -12,6 +12,6 @@ module app.ai_dictionary {
     requires com.almasb.fxgl.all;
     requires java.sql;
 
-    opens app.Run to javafx.fxml;
-    exports app.Run;
+    opens app.SourceCode.GUI.Controller to javafx.fxml;
+    exports app.SourceCode.GUI.Controller;
 }

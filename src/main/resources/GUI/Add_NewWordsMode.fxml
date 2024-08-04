@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.SourceCode.GUI.Controller.Add_NewWordsController">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="background" stylesheets="@../css/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <left>
+                <VBox prefHeight="200.0" prefWidth="435.0" styleClass="right-bar" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" stylesheets="@../css/style.css">
+                            <children>
+                                <Label prefHeight="49.0" prefWidth="59.0" text="AI" textFill="#588787">
+                                    <font>
+                                        <Font name="Cambria Bold" size="40.0" />
+                                    </font>
+                                </Label>
+                                <Label prefHeight="49.0" prefWidth="206.0" text="Dictionary" textFill="#588787">
+                                    <font>
+                                        <Font name="Cambria" size="40.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <styleClass>
+                                <String fx:value="name-dictionary" />
+                                <String fx:value="shadow" />
+                            </styleClass>
+                            <VBox.margin>
+                                <Insets bottom="20.0" left="5.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                </VBox>
+            </left>
+            <center>
+                <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="880.0" stylesheets="@../css/style.css">
+                            <VBox.margin>
+                                <Insets bottom="20.0" left="20.0" right="20.0" top="5.0" />
+                            </VBox.margin>
+                            <styleClass>
+                                <String fx:value="mode-dictionary" />
+                                <String fx:value="shadow" />
+                            </styleClass>
+                            <children>
+                                <Button mnemonicParsing="false" prefHeight="82.0" prefWidth="143.0" stylesheets="@../css/style.css" text="Search">
+                                    <HBox.margin>
+                                        <Insets left="20.0" right="20.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Cambria Bold" size="20.0" />
+                                    </font>
+                           <styleClass>
+                              <String fx:value="button-no-mode" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                                </Button>
+                                <Button mnemonicParsing="false" prefHeight="82.0" prefWidth="143.0" styleClass="button-mode" stylesheets="@../css/style.css" text="Add/New words" textFill="#fffafa">
+                                    <HBox.margin>
+                                        <Insets right="20.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Cambria Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button mnemonicParsing="false" prefHeight="82.0" prefWidth="143.0" stylesheets="@../css/style.css" text="Edit">
+                                    <font>
+                                        <Font name="Cambria Bold" size="20.0" />
+                                    </font>
+                                    <styleClass>
+                                        <String fx:value="button-no-mode" />
+                                        <String fx:value="shadow" />
+                                    </styleClass>
+                                </Button>
+                                <Button layoutX="336.0" layoutY="19.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="143.0" stylesheets="@../css/style.css" text="Game">
+                                    <font>
+                                        <Font name="Cambria Bold" size="20.0" />
+                                    </font>
+                                    <styleClass>
+                                        <String fx:value="button-no-mode" />
+                                        <String fx:value="shadow" />
+                                    </styleClass>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button layoutX="499.0" layoutY="19.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="143.0" stylesheets="@../css/style.css" text="Translate">
+                                    <font>
+                                        <Font name="Cambria Bold" size="20.0" />
+                                    </font>
+                                    <styleClass>
+                                        <String fx:value="button-no-mode" />
+                                        <String fx:value="shadow" />
+                                    </styleClass>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <VBox prefHeight="70.0" prefWidth="880.0">
+                            <children>
+                                <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="80.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../image/Definition.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label prefHeight="49.0" prefWidth="358.0" text="Definition" textFill="#588787">
+                                            <font>
+                                                <Font name="Cambria Bold" size="40.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

@@ -21,7 +21,9 @@ public class Trie {
         String target = word.getWord_target();
 
         for (char ch : target.toCharArray()) {
-            // index_child_node = ch - 'a';
+            if ((ch < 'a' || ch > 'z') && ch != ' ') {
+                continue;
+            }
             if (node.getChild(ch) == null) {
                 node.setChild(ch, new TrieNode());
             }
@@ -36,7 +38,7 @@ public class Trie {
      * insert from ArrayList method.
      * @param wordList List
      */
-    public void insert(ArrayList<Word> wordList) {
+    public void insert(List<Word> wordList) {
         for (Word word: wordList) {
             insert(word);
         }

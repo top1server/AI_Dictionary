@@ -1,0 +1,99 @@
+.name-dictionary{
+    -fx-background-color: #E6E6FA;
+    -fx-background-radius: 100;
+}
+
+.search-box{
+    -fx-background-color: #AFEEEE;
+    -fx-background-radius: 100;
+}
+
+.mode-dictionary{
+    -fx-background-color: #D3D3D3;
+    -fx-background-radius: 100;
+}
+
+.button:pressed {
+    -fx-background-color: #87CEFA;
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.3), 10, 0.0, 0, 0);
+}
+
+.button:hover {
+    -fx-text-fill: red;
+}
+
+.button-mode{
+    -fx-text-fill: white;
+    -fx-background-color: #000000;
+    -fx-background-radius: 100;
+}
+
+.button-no-mode{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 100;
+}
+
+.definition{
+    -fx-background-color: #FFEFD5;
+    -fx-background-radius: 50;
+}
+
+
+.transparent{
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-text-fill: #000000;
+}
+
+.search-button{
+    -fx-background-radius: 30;
+}
+
+.right-bar{
+    -fx-background-color: #F5F5DC;
+
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.7), 10.0, 0.0, 0.0, 4.0);
+}
+
+.shadow-name {
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.7), 10.0, 0.0, 0.0, 3.0);
+}
+
+.round-button {
+    -fx-background-color: #ADD8E6;
+    -fx-background-radius: 50%;
+    -fx-pref-width: 50px;
+    -fx-pref-height: 50px;
+    -fx-padding: 10px;
+}
+
+.list-word{
+    -fx-background-color: #B0E0E6;
+    -fx-background-radius: 50;
+}
+
+.Search-mode{
+    -fx-background-radius: 50;
+}
+
+.list-view .list-cell {
+    -fx-background-radius: 200;
+    -fx-text-fill:red;
+    -fx-alignment: CENTER;
+    -fx-font-size: 25px;
+}
+
+.list-view .scroll-bar {
+    -fx-opacity: 0;
+}
+
+
+
+
+
+
+
+
+

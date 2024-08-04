@@ -34,6 +34,4 @@ public class WriteToFile {
             System.out.println("Error: IO Exception when writing to txt!");
         }
     }
-
-
 }
