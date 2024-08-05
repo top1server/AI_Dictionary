@@ -239,6 +239,15 @@
                                     </Button>
                               <HBox alignment="CENTER" prefHeight="74.0" prefWidth="375.0" styleClass="shadow" stylesheets="@../css/style.css">
                                  <children>
+                                    <Button fx:id="addButton1" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" stylesheets="@../css/style.css" text="Delete" textAlignment="CENTER" textFill="#2f2b2b" wrapText="true">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="search-button" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </Button>
                                     <TextField fx:id="message" alignment="CENTER" prefHeight="40.0" prefWidth="218.0" styleClass="transparent" stylesheets="@../css/style.css" text="Message">
                                        <font>
                                           <Font name="Cambria" size="20.0" />

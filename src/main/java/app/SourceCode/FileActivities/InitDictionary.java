@@ -11,14 +11,15 @@ public class InitDictionary extends DictionaryManagement {
 
     public InitDictionary() {
         dictionaryInit.insertFromFile_txt("src/main/resources/txt/dictionary.txt");
-        //dictionaryInit.insertFromFile_sql();
+        dictionaryInit.insertFromFile_sql();
     }
 
     public InitDictionary(String filePath) {
         dictionaryInit.insertFromFile_txt(filePath);
     }
 
-    public List<Word> search(String prefix) {
+    public static List<Word> search(String prefix) {
         return Dictionary.getTrie().search(prefix);
     }
+
 }

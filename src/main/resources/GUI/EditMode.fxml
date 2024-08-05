@@ -10,11 +10,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.SourceCode.GUI.Controller.ControllerTranslateMode">
+<AnchorPane prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.SourceCode.GUI.Controller.ControllerEditMode">
     <children>
         <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <left>
-                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="435.0" style="-fx-background-color: #FFD700;" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
+                <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="435.0" style="-fx-background-color: #FFD700;" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
                     <styleClass>
                         <String fx:value="right-bar" />
                         <String fx:value="Search-mode" />
@@ -25,7 +25,7 @@
                     <children>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" stylesheets="@../css/style.css">
                             <VBox.margin>
-                                <Insets bottom="20.0" left="10.0" right="10.0" />
+                                <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
                             </VBox.margin>
                             <styleClass>
                                 <String fx:value="name-dictionary" />
@@ -53,7 +53,7 @@
                                 <String fx:value="shadow" />
                             </styleClass>
                             <children>
-                                <TextField fx:id="inputTyped" prefHeight="40.0" prefWidth="218.0" promptText="Type word to add" styleClass="transparent" stylesheets="@../css/style.css">
+                                <TextField fx:id="oldWord" onKeyReleased="#SearchOldWord" prefHeight="40.0" prefWidth="218.0" promptText="Search old word" styleClass="transparent" stylesheets="@../css/style.css">
                                     <HBox.margin>
                                         <Insets left="20.0" />
                                     </HBox.margin>
@@ -61,6 +61,12 @@
                                         <Font name="Cambria" size="20.0" />
                                     </font>
                                 </TextField>
+                        <Button fx:id="deleteButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" stylesheets="@../css/style.css" text="Delete" textAlignment="CENTER" textFill="#2f2b2b" wrapText="true">
+                           <styleClass>
+                              <String fx:value="search-button" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </Button>
                             </children>
                         </HBox>
                         <ImageView fitHeight="150.0" fitWidth="397.0" pickOnBounds="true" preserveRatio="true">
@@ -68,18 +74,37 @@
                                 <Image url="@../image/E.png" />
                             </image>
                         </ImageView>
-                        <ListView prefHeight="443.0" prefWidth="415.0" stylesheets="@../css/style.css">
-                            <styleClass>
-                                <String fx:value="shadow" />
-                                <String fx:value="list-word" />
-                            </styleClass>
-                            <padding>
-                                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
-                            </padding>
-                            <VBox.margin>
-                                <Insets left="10.0" right="10.0" />
-                            </VBox.margin>
-                        </ListView>
+                  <HBox alignment="CENTER" layoutX="40.0" layoutY="363.0" prefHeight="74.0" prefWidth="375.0" stylesheets="@../css/style.css">
+                     <children>
+                        <TextField fx:id="editWord" alignment="CENTER" prefHeight="40.0" prefWidth="218.0" promptText="Edit new word" styleClass="transparent" stylesheets="@../css/style.css">
+                           <font>
+                              <Font name="Cambria" size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <ListView fx:id="listWord" onKeyPressed="#HandleSelectKey" onMouseClicked="#HandleSelectItem" prefHeight="360.0" prefWidth="435.0" style="-fx-background-radius: 50;" stylesheets="@../css/style.css">
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="search-box" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="20.0" left="15.0" top="20.0" />
+                     </padding>
+                  </ListView>
                     </children>
                 </VBox>
             </left>
@@ -118,26 +143,10 @@
                                         <String fx:value="shadow" />
                                     </styleClass>
                                 </Button>
-                                <Button fx:id="add_NewWordsMode" mnemonicParsing="false" prefHeight="82.0" prefWidth="143.0" stylesheets="@../css/style.css" text="Add/New words" textFill="WHITE">
+                                <Button fx:id="addMode" mnemonicParsing="false" prefHeight="82.0" prefWidth="143.0" stylesheets="@../css/style.css" text="Add/New words">
                                     <HBox.margin>
                                         <Insets bottom="10.0" right="20.0" top="10.0" />
                                     </HBox.margin>
-                                    <font>
-                                        <Font name="Cambria Bold" size="20.0" />
-                                    </font>
-                                    <styleClass>
-                                        <String fx:value="button-mode" />
-                                        <String fx:value="shadow" />
-                                    </styleClass>
-                                    <graphic>
-                                        <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <Image url="@../image/AddWhite.png" />
-                                            </image>
-                                        </ImageView>
-                                    </graphic>
-                                </Button>
-                                <Button fx:id="editMode" mnemonicParsing="false" prefHeight="82.0" prefWidth="143.0" stylesheets="@../css/style.css" text="Edit">
                                     <font>
                                         <Font name="Cambria Bold" size="20.0" />
                                     </font>
@@ -148,7 +157,23 @@
                                     <graphic>
                                         <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../image/Edit.png" />
+                                                <Image url="@../image/Add.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="editMode" mnemonicParsing="false" prefHeight="82.0" prefWidth="143.0" stylesheets="@../css/style.css" text="Edit" textFill="WHITE">
+                                    <font>
+                                        <Font name="Cambria Bold" size="20.0" />
+                                    </font>
+                                    <styleClass>
+                                        <String fx:value="button-mode" />
+                                        <String fx:value="shadow" />
+                                    </styleClass>
+                                    <graphic>
+                                        <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../image/EditWhite.png" />
                                             </image>
                                         </ImageView>
                                     </graphic>
@@ -215,22 +240,22 @@
                         </HBox>
                         <VBox alignment="BOTTOM_LEFT" prefHeight="562.0" prefWidth="850.0">
                             <children>
-                                <TextField alignment="CENTER" prefHeight="503.0" prefWidth="830.0" promptText="describe new word" stylesheets="@../css/style.css">
-                                    <styleClass>
-                                        <String fx:value="shadow" />
-                                        <String fx:value="definition" />
-                                        <String fx:value="text-default" />
-                                    </styleClass>
-                                    <VBox.margin>
-                                        <Insets left="10.0" right="10.0" />
-                                    </VBox.margin>
-                                    <font>
-                                        <Font name="System Bold" size="20.0" />
-                                    </font>
-                                </TextField>
+                        <TextFlow fx:id="newDefinition" prefHeight="510.0" prefWidth="850.0" stylesheets="@../css/style.css">
+                           <styleClass>
+                              <String fx:value="definition" />
+                              <String fx:value="text-default" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <padding>
+                              <Insets bottom="10.0" left="30.0" right="10.0" top="20.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </VBox.margin>
+                        </TextFlow>
                                 <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
                                     <children>
-                                        <Button fx:id="translateButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" stylesheets="@../css/style.css" text="Add" textAlignment="CENTER" textFill="#2f2b2b" wrapText="true">
+                                        <Button fx:id="editButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" stylesheets="@../css/style.css" text="Edit" textAlignment="CENTER" textFill="#2f2b2b" wrapText="true">
                                             <styleClass>
                                                 <String fx:value="search-button" />
                                                 <String fx:value="shadow" />

@@ -1,5 +1,6 @@
 package app.SourceCode.GUI.Controller;
 
+import app.SourceCode.FileActivities.InitDictionary;
 import app.SourceCode.FileActivities.ReadFromFile;
 import app.SourceCode.FileActivities.WriteToFile;
 import app.SourceCode.Fundamental.Word;
@@ -14,6 +15,7 @@ import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -29,8 +31,9 @@ public class ControllerAddMode {
     @FXML
     private TextField newWord, message;
     @FXML
-    private ListView<String> vocabulary;
+    private ListView<String> vocabulary = new ListView<>();
 
+    InitDictionary initDictionary = new InitDictionary("src/main/resources/txt/dictionary_add.txt");
     @FXML
     public void initialize() {
         updateVocabularyList();
@@ -108,11 +111,23 @@ public class ControllerAddMode {
         }
     }
 
-    public void HandleSelectKey(KeyEvent keyEvent) {
-
+    @FXML
+    public void HandleSelectItem(MouseEvent event) {
+        String typed = vocabulary.getSelectionModel().getSelectedItem();
+        Word word = InitDictionary.search(typed).getFirst();
+        String tmp1 = word.getWord_explain();
+        definition.clear();
+        definition.setText(tmp1);
     }
 
-    public void HandleSelectItem(MouseEvent mouseEvent) {
-
+    @FXML
+    public void HandleSelectKey(KeyEvent event) {
+        String typed = vocabulary.getSelectionModel().getSelectedItem();
+        Word word = InitDictionary.search(typed).getFirst();
+        String tmp1 = word.getWord_explain();
+        definition.clear();
+        definition.setText(tmp1);
     }
+
+
 }

@@ -107,9 +107,11 @@ public class Trie {
             if (!current.isEndOfWord()) {
                 return false;
             }
-            current.setEndOfWord(false);
             current.getWords().removeIf(w -> w.getWord_target().equals(word));
-            return current.getWords().isEmpty();
+            if (current.getWords().isEmpty()) {
+                current.setEndOfWord(false);
+            }
+            return current.getWords().isEmpty() && Arrays.stream(current.children).allMatch(Objects::isNull);
         }
 
         char ch = word.charAt(index);
@@ -122,8 +124,8 @@ public class Trie {
 
         if (shouldDeleteCurrentNode) {
             current.setChild(ch, null);
-            // Check if trie has any remaining child nodes
-            return current.getWords().isEmpty() && Arrays.stream(current.children).allMatch(Objects::isNull);
+            // Check if current node has any remaining child nodes
+            return !current.isEndOfWord() && Arrays.stream(current.children).allMatch(Objects::isNull);
         }
         return false;
     }

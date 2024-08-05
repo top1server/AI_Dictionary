@@ -11,6 +11,7 @@ import java.util.Scanner;
 
 public class DictionaryManagement extends Dictionary {
 
+    public boolean cnt = false;
     /**
      * insert words from commandline into trie.
      */
@@ -62,5 +63,4 @@ public class DictionaryManagement extends Dictionary {
     public void removeWord(Word word) {
         Dictionary.getTrie().delete(word);
     }
-
 }

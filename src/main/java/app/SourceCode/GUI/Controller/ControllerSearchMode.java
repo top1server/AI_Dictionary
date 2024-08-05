@@ -37,12 +37,12 @@ public class ControllerSearchMode {
     InitDictionary initDictionary = new InitDictionary();
 
     @FXML
-    private ListView<String> ListWord = new ListView<>();
+    private ListView<String> listWord = new ListView<>();
 
     @FXML
     public void initialize() {
         // Set cell factory for ListView
-        ListWord.setCellFactory(new Callback<ListView<String>, ListCell<String>>() {
+        listWord.setCellFactory(new Callback<ListView<String>, ListCell<String>>() {
             @Override
             public ListCell<String> call(ListView<String> listView) {
                 return new ListCell<String>() {
@@ -79,17 +79,17 @@ public class ControllerSearchMode {
             for (Word word: tmp2) {
                 tmp3.add(word.getWord_target());
             }
-            ListWord.getItems().clear();
-            ListWord.setItems(tmp3);
-            ListWord.setFixedCellSize(77.4);
+            listWord.getItems().clear();
+            listWord.setItems(tmp3);
+            listWord.setFixedCellSize(77.4);
         } else {
-            ListWord.getItems().clear();
+            listWord.getItems().clear();
         }
     }
 
     @FXML
     public void HandleSelectItem(MouseEvent event) {
-        String typed = ListWord.getSelectionModel().getSelectedItem();
+        String typed = listWord.getSelectionModel().getSelectedItem();
         Word word = initDictionary.search(typed).getFirst();
         String tmp1 = word.getWord_explain();
 
@@ -112,7 +112,7 @@ public class ControllerSearchMode {
 
     @FXML
     public void HandleSelectKey(KeyEvent event) {
-        String typed = ListWord.getSelectionModel().getSelectedItem();
+        String typed = listWord.getSelectionModel().getSelectedItem();
         Word word = initDictionary.search(typed).getFirst();
         String tmp1 = word.getWord_explain();
 
@@ -144,7 +144,4 @@ public class ControllerSearchMode {
             e.printStackTrace();
         }
     }
-
-
-
 }

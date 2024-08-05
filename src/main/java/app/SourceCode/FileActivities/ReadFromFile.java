@@ -21,6 +21,7 @@ public class ReadFromFile {
             String line;
 
             while ((line = bufferedReader.readLine()) != null) {
+                if (line.startsWith("\n")) continue;
                 String[] parts = line.split("\t");
                 if (parts.length >= 2) {
                     String word_target = parts[0];
