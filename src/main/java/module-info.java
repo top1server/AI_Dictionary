@@ -13,6 +13,8 @@ module app.ai_dictionary {
     requires java.sql;
     requires java.net.http;
     requires com.fasterxml.jackson.databind;
+    requires jsapi;
+    requires java.desktop;
 
     opens app.SourceCode.GUI.Controller to javafx.fxml;
     exports app.SourceCode.GUI.Controller;

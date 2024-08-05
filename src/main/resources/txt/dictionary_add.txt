@@ -1,6 +1,6 @@
-hihi	cười
-hello	xin chào
 go	đi
-focus	chú ý
-find	tìm
-query	truy vấn
+
+chicken	gà
+
+
+hihi	cười

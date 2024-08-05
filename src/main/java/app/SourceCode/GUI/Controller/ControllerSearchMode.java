@@ -22,36 +22,19 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class ControllerSearchMode {
+    @FXML
+    private Button searchButton, searchMode, addMode, editMode, translateMode, gameMode;
 
     @FXML
-    private Button searchButton;
-
-    @FXML
-    private Button translateButton;
-
-    @FXML
-    private Button searchMode;
-
-    @FXML
-    private Button addMode;
-
-    @FXML
-    private Button editMode;
-
-    @FXML
-    private Button translateMode;
-
-    @FXML
-    private Button gameMode;
-
-    @FXML
-    private MenuButton defaultLanguage;
-
-    @FXML
-    private MenuButton customLanguage;
+    private MenuButton defaultLanguage, customLanguage;
 
     @FXML
     private TextField inputTyped;
+
+    @FXML
+    private TextFlow definition, relation;
+
+    InitDictionary initDictionary = new InitDictionary();
 
     @FXML
     private ListView<String> ListWord = new ListView<>();
@@ -77,28 +60,10 @@ public class ControllerSearchMode {
                 };
             }
         });
-    }
-
-    @FXML
-    private TextFlow definition;
-
-    @FXML
-    private TextFlow relation;
-
-    InitDictionary initDictionary = new InitDictionary();
-
-    @FXML
-    private void HandleButtonClick(ActionEvent event) {
-        if (event.getSource() instanceof Button clickedButton) {
-            if (clickedButton.getId().equals("addMode")) {
-                loadAddModeScene();
-            } else if (clickedButton.getId().equals("translateMode")) {
-                loadTranslateModeScene();
-            }
-        }
-        if (event.getSource() instanceof MenuButton clickedMenuButton) {
-            System.out.println("MenuButton ID: " + clickedMenuButton.getId());
-        }
+        translateMode.setOnAction(event -> switchMode("/GUI/TranslateMode.fxml"));
+        addMode.setOnAction(event -> switchMode("/GUI/AddMode.fxml"));
+        editMode.setOnAction(event -> switchMode("/GUI/EditMode.fxml"));
+        gameMode.setOnAction(event -> switchMode("/GUI/GameMode.fxml"));
     }
 
     @FXML
@@ -168,28 +133,12 @@ public class ControllerSearchMode {
         relation.getChildren().add(new Text(filteredLines.toString()));
     }
 
-    private void loadAddModeScene() {
+    private void switchMode(String fxmlFile) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/addMode.fxml"));
-            Parent addModeRoot = fxmlLoader.load();
-
-            // Lấy stage hiện tại và thiết lập cảnh mới
-            Stage stage = (Stage) addMode.getScene().getWindow();
-            stage.setScene(new Scene(addModeRoot));
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void loadTranslateModeScene() {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/translateMode.fxml"));
-            Parent addModeRoot = fxmlLoader.load();
-
-            // Lấy stage hiện tại và thiết lập cảnh mới
-            Stage stage = (Stage) addMode.getScene().getWindow();
-            stage.setScene(new Scene(addModeRoot));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlFile));
+            Parent root = fxmlLoader.load();
+            Stage stage = (Stage) translateMode.getScene().getWindow();
+            stage.setScene(new Scene(root));
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();

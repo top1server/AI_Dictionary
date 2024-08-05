@@ -5,28 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35b0b3c6-ceaf-4dcd-8ff1-c43a00b9c0a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/Fundamental/GoogleTransAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerAddMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerTranslateMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/AddMode.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/TranslateMode.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/API.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/AddWhite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/E.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/NewWord.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/SearchBlack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/Source.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/To.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/TranslateWhite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/Fundamental/TextToSpeech.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/EditMode.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/FileActivities/ReadFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/FileActivities/ReadFromFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/Add_NewWordsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/SearchModeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerSearchMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/FileActivities/InitDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/FileActivities/InitDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/FileActivities/WriteToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/FileActivities/WriteToFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerAddMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerAddMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerSearchMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerSearchMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerTranslateMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerTranslateMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/GUI/Add_NewWordsMode.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/GUI/AddMode.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI/AddMode.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/GUI/SearchMode.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI/SearchMode.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/GUI/TranslateMode.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI/TranslateMode.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/txt/dictionary_add.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/txt/dictionary_add.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,22 +71,25 @@
     "Application.MySQLConnection.executor": "Run",
     "Application.Run.executor": "Run",
     "Application.SearchModeController.executor": "Run",
+    "Application.TextToSpeech.executor": "Run",
+    "Application.VN.executor": "Run",
+    "Application.ViettelTTSExample.executor": "Run",
     "Application.YandexTranslateExample.executor": "Run",
     "Application.test.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Java/project/AI_Dictionary/src/main/resources/jar/okio-3.9.0.jar",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "D:/Java/project/freetts-1.2.2-bin/freetts-1.2/lib/mbrola.jar",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.reader.mode"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">

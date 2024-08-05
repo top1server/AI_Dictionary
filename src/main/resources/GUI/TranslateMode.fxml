@@ -126,7 +126,7 @@
 
                                 <MenuButton fx:id="customLanguage" alignment="CENTER" layoutX="85.0" layoutY="41.0" mnemonicParsing="false" onAction="#HandleButtonClick" prefHeight="39.0" prefWidth="159.0" stylesheets="@../css/style.css" text="Vietnamese">
                                     <items>
-                                        <MenuItem mnemonicParsing="false" text="English" />
+                                        <MenuItem mnemonicParsing="false" onAction="#handleMenuItemSelection" text="English" />
                               <MenuItem mnemonicParsing="false" text="Vietnamese" />
                                     </items>
                                     <styleClass>

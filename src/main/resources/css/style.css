@@ -99,6 +99,14 @@
     -fx-text-fill: black;
 }
 
+.text-area {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30;
+    -fx-border-radius: 50;
+    -fx-font-size: 24px;
+}
+
+
 
 
 
