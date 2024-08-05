@@ -1,27 +1,27 @@
 package app.SourceCode.GUI.Controller;
 
 import app.SourceCode.FileActivities.InitDictionary;
-import app.SourceCode.Fundamental.Dictionary;
 import app.SourceCode.Fundamental.Word;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.event.ActionEvent;
-import javafx.scene.effect.DropShadow;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
+import javafx.stage.Stage;
 import javafx.util.Callback;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
-public class SearchModeController {
+public class ControllerSearchMode {
 
     @FXML
     private Button searchButton;
@@ -33,7 +33,7 @@ public class SearchModeController {
     private Button searchMode;
 
     @FXML
-    private Button add_NewWordsMode;
+    private Button addMode;
 
     @FXML
     private Button editMode;
@@ -48,7 +48,7 @@ public class SearchModeController {
     private MenuButton defaultLanguage;
 
     @FXML
-    private MenuButton customButton;
+    private MenuButton customLanguage;
 
     @FXML
     private TextField inputTyped;
@@ -78,25 +78,26 @@ public class SearchModeController {
             }
         });
     }
+
     @FXML
     private TextFlow definition;
+
+    @FXML
+    private TextFlow relation;
 
     InitDictionary initDictionary = new InitDictionary();
 
     @FXML
-    private void handleButtonClick(ActionEvent event) {
+    private void HandleButtonClick(ActionEvent event) {
         if (event.getSource() instanceof Button clickedButton) {
-            System.out.println("Button ID: " + clickedButton.getId());
+            if (clickedButton.getId().equals("addMode")) {
+                loadAddModeScene();
+            } else if (clickedButton.getId().equals("translateMode")) {
+                loadTranslateModeScene();
+            }
         }
         if (event.getSource() instanceof MenuButton clickedMenuButton) {
             System.out.println("MenuButton ID: " + clickedMenuButton.getId());
-        }
-    }
-
-    @FXML
-    public void Typing(ActionEvent event) {
-        if (event.getSource() == inputTyped) {
-            System.out.println("please wait");
         }
     }
 
@@ -125,8 +126,76 @@ public class SearchModeController {
     public void HandleSelectItem(MouseEvent event) {
         String typed = ListWord.getSelectionModel().getSelectedItem();
         Word word = initDictionary.search(typed).getFirst();
-        System.out.println(word.getWord_explain());
+        String tmp1 = word.getWord_explain();
+
+        String[] lines = tmp1.split("\n");
+        StringBuilder filteredLines = new StringBuilder();
+        StringBuilder otherLines = new StringBuilder();
+
+        for (String line : lines) {
+            if (line.startsWith("~")) {
+                filteredLines.append(line).append("\n");
+            } else {
+                otherLines.append(line).append("\n");
+            }
+        }
+        definition.getChildren().clear();
+        definition.getChildren().add(new Text(otherLines.toString()));
+        relation.getChildren().clear();
+        relation.getChildren().add(new Text(filteredLines.toString()));
     }
+
+    @FXML
+    public void HandleSelectKey(KeyEvent event) {
+        String typed = ListWord.getSelectionModel().getSelectedItem();
+        Word word = initDictionary.search(typed).getFirst();
+        String tmp1 = word.getWord_explain();
+
+        String[] lines = tmp1.split("\n");
+        StringBuilder filteredLines = new StringBuilder();
+        StringBuilder otherLines = new StringBuilder();
+
+        for (String line : lines) {
+            if (line.startsWith("~")) {
+                filteredLines.append(line).append("\n");
+            } else {
+                otherLines.append(line).append("\n");
+            }
+        }
+        definition.getChildren().clear();
+        definition.getChildren().add(new Text(otherLines.toString()));
+        relation.getChildren().clear();
+        relation.getChildren().add(new Text(filteredLines.toString()));
+    }
+
+    private void loadAddModeScene() {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/addMode.fxml"));
+            Parent addModeRoot = fxmlLoader.load();
+
+            // Lấy stage hiện tại và thiết lập cảnh mới
+            Stage stage = (Stage) addMode.getScene().getWindow();
+            stage.setScene(new Scene(addModeRoot));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void loadTranslateModeScene() {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/translateMode.fxml"));
+            Parent addModeRoot = fxmlLoader.load();
+
+            // Lấy stage hiện tại và thiết lập cảnh mới
+            Stage stage = (Stage) addMode.getScene().getWindow();
+            stage.setScene(new Scene(addModeRoot));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 
 }

@@ -11,7 +11,11 @@ module app.ai_dictionary {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires java.sql;
+    requires java.net.http;
+    requires com.fasterxml.jackson.databind;
 
     opens app.SourceCode.GUI.Controller to javafx.fxml;
     exports app.SourceCode.GUI.Controller;
+    exports app.SourceCode.Fundamental;
+    opens app.SourceCode.Fundamental to javafx.fxml;
 }

@@ -46,6 +46,7 @@
 
 .search-button{
     -fx-background-radius: 30;
+    -fx-background-color: #FFFFFF;
 }
 
 .right-bar{
@@ -89,6 +90,14 @@
     -fx-opacity: 0;
 }
 
+.text-custom {
+    -fx-font-size: 16px;
+}
+
+.text-default{
+    -fx-font-size: 24px;
+    -fx-text-fill: black;
+}
 
 
 

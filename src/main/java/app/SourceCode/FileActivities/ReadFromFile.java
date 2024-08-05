@@ -54,7 +54,7 @@ public class ReadFromFile {
             ans = new ArrayList<>();
             Connection connection = DriverManager.getConnection(url, username, password);
             if (connection != null) {
-                System.out.println("Accessed 'dictionary'");
+                System.out.println("Loading dictionary ...");
 
                 // Query data
                 Statement statement = connection.createStatement();
@@ -63,14 +63,20 @@ public class ReadFromFile {
                 //Loop for read file
                 while(resultSet.next()) {
                     String word_target = resultSet.getString("target")
-                            .replaceAll("-", "");
+                            .replaceAll("-", "")
+                            .replaceAll("," , "")
+                            .replaceAll("\\.", " ")
+                            .replaceAll("\\(", "")
+                            .replaceAll("\\)", "")
+                            .replaceAll("=", "");
                     String word_explain = resultSet.getString("definition");
                     word_explain = word_explain
                             .replaceAll("<I><Q>", "")
                             .replaceAll("</Q></I>", "")
                             .replaceAll("<br />", "\n")
-                            .replaceAll("\\+", " +")
-                            .replaceAll("=", "\t~ ");
+                            .replaceAll("\\+", " :")
+                            .replaceAll("=", "~ ")
+                            .replaceAll("!", "+ ");
                     Word newWord = new Word(word_target, word_explain);
 
                     ans.add(newWord);
