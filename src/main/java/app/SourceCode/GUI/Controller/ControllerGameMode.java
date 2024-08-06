@@ -93,7 +93,11 @@ public class ControllerGameMode {
         Random random = new Random();
         Word word = words.get(random.nextInt(words.size()));
         selectedWord = word.getWord_target().toLowerCase();
-        displayWord = new StringBuilder("_".repeat(selectedWord.length()));
+        displayWord = new StringBuilder();
+        displayWord.append(selectedWord.charAt(0)); // Thêm chữ cái đầu tiên
+
+        displayWord.append("_".repeat(selectedWord.length() - 1));
+
         guessedLetters = new ArrayList<>();
         updateWordDisplay();
     }
