@@ -40,7 +40,6 @@ public class ControllerAddMode {
         message.setText("Message");
         vocabulary.setFixedCellSize(68.7);
 
-        // Thêm sự kiện cho nút addButton
         addButton.setOnAction(event -> {
             try {
                 addWord(); // Gọi phương thức addWord khi addButton được nhấn
@@ -77,6 +76,7 @@ public class ControllerAddMode {
         if (!typed.isEmpty()) {
             WriteToFile.writeTXT("src/main/resources/txt/dictionary_add.txt", typed + "\t" + defined);
             updateVocabularyList();
+            initDictionary.addWord(new Word(typed, defined));
             message.setText("Successful!");
             delayAction(1.0, () -> message.setText("Message"));
         }
@@ -128,6 +128,4 @@ public class ControllerAddMode {
         definition.clear();
         definition.setText(tmp1);
     }
-
-
 }

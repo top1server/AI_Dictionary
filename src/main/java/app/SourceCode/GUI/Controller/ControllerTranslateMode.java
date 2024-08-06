@@ -1,6 +1,7 @@
 package app.SourceCode.GUI.Controller;
 
 import app.SourceCode.Fundamental.GoogleTransAPI;
+import app.SourceCode.Fundamental.TextToSpeech;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,7 +18,7 @@ public class ControllerTranslateMode {
     @FXML
     private TextField inputTyped;
     @FXML
-    private Button translateButton, searchMode, addMode, editMode, translateMode, gameMode;
+    private Button translateButton, searchMode, addMode, editMode, translateMode, gameMode, pDefaultLanguage;
     @FXML
     private MenuButton defaultLanguage, customLanguage;
     @FXML
@@ -39,6 +40,7 @@ public class ControllerTranslateMode {
         addMode.setOnAction(event -> switchMode("/GUI/addMode.fxml"));
         editMode.setOnAction(event -> switchMode("/GUI/editMode.fxml"));
         gameMode.setOnAction(event -> switchMode("/GUI/gameMode.fxml"));
+        pDefaultLanguage.setOnAction(event -> HandleVoiceButtonClick());
     }
 
     @FXML
@@ -89,6 +91,14 @@ public class ControllerTranslateMode {
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void HandleVoiceButtonClick() {
+        String typed = inputTyped.getText();
+        if (typed != null && !typed.isEmpty()) {
+            TextToSpeech.voice(typed);
         }
     }
 }

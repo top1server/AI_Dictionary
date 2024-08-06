@@ -124,8 +124,19 @@ public class ControllerEditMode {
         if (!words.isEmpty()) {
             Word word = words.getFirst();
             String tmp1 = word.getWord_explain();
+            String[] lines = tmp1.split("\n");
+            StringBuilder filteredLines = new StringBuilder();
+            StringBuilder otherLines = new StringBuilder();
+
+            for (String line : lines) {
+                if (line.startsWith("~")) {
+                    filteredLines.append(line).append("\n");
+                } else {
+                    otherLines.append(line).append("\n");
+                }
+            }
             newDefinition.getChildren().clear();
-            newDefinition.getChildren().add(new Text(tmp1));
+            newDefinition.getChildren().add(new Text(otherLines.toString()));
         } else {
             newDefinition.getChildren().clear();
             newDefinition.getChildren().add(new Text("Word not found."));
@@ -139,8 +150,21 @@ public class ControllerEditMode {
         if (!words.isEmpty()) {
             Word word = words.getFirst(); // Lấy phần tử đầu tiên nếu danh sách không rỗng
             String tmp1 = word.getWord_explain();
+
+            String[] lines = tmp1.split("\n");
+            StringBuilder filteredLines = new StringBuilder();
+            StringBuilder otherLines = new StringBuilder();
+
+            for (String line : lines) {
+                if (line.startsWith("~")) {
+                    filteredLines.append(line).append("\n");
+                } else {
+                    otherLines.append(line).append("\n");
+                }
+            }
+
             newDefinition.getChildren().clear();
-            newDefinition.getChildren().add(new Text(tmp1));
+            newDefinition.getChildren().add(new Text(otherLines.toString()));
         } else {
             newDefinition.getChildren().clear();
             newDefinition.getChildren().add(new Text("Word not found."));

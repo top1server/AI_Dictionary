@@ -1,7 +1,6 @@
 package app.SourceCode.GUI.Controller;
 
 import app.SourceCode.FileActivities.InitDictionary;
-import app.SourceCode.Fundamental.TextToSpeech;
 import app.SourceCode.Fundamental.Word;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -11,7 +10,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.event.ActionEvent;
-import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
@@ -19,13 +17,15 @@ import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 
+import java.util.ArrayList;
+import java.util.Random;
 import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class ControllerSearchMode {
+public class ControllerGameMode {
     @FXML
-    private Button searchButton, searchMode, addMode, editMode, translateMode, gameMode, voiceButton;
+    private Button searchButton, searchMode, addMode, editMode, translateMode, gameMode;
 
     @FXML
     private MenuButton defaultLanguage, customLanguage;
@@ -34,10 +34,25 @@ public class ControllerSearchMode {
     private TextField inputTyped;
 
     @FXML
-    private TextFlow definition, relation;
+    private TextFlow definition;
 
     @FXML
     private ListView<String> listWord = new ListView<>();
+
+    @FXML
+    private Text wordDisplay;
+    @FXML
+    private TextField guessInput;
+    @FXML
+    private Button submitGuessButton;
+    @FXML
+    private Label statusLabel;
+
+    private String selectedWord;
+    private StringBuilder displayWord;
+    private List<Character> guessedLetters;
+    private int guessesRemaining = 10;
+
 
     @FXML
     public void initialize() {
@@ -63,12 +78,72 @@ public class ControllerSearchMode {
         translateMode.setOnAction(event -> switchMode("/GUI/TranslateMode.fxml"));
         addMode.setOnAction(event -> switchMode("/GUI/AddMode.fxml"));
         editMode.setOnAction(event -> switchMode("/GUI/EditMode.fxml"));
-        gameMode.setOnAction(event -> switchMode("/GUI/GameMode.fxml"));
-        voiceButton.setOnAction(event -> HandleVoiceButtonClick());
+        searchMode.setOnAction(event -> switchMode("/GUI/SearchMode.fxml"));
+        loadNewWord();
+        submitGuessButton.setOnAction(event -> handleGuess());
+    }
+
+    private void loadNewWord() {
+        List<Word> words = InitDictionary.search("");
+        if (words.isEmpty()) {
+            statusLabel.setText("No words available.");
+            return;
+        }
+
+        Random random = new Random();
+        Word word = words.get(random.nextInt(words.size()));
+        selectedWord = word.getWord_target().toLowerCase();
+        displayWord = new StringBuilder("_".repeat(selectedWord.length()));
+        guessedLetters = new ArrayList<>();
+        updateWordDisplay();
+    }
+
+    private void handleGuess() {
+        String guess = guessInput.getText().toLowerCase();
+        if (guess.length() != 1 || !Character.isLetter(guess.charAt(0))) {
+            statusLabel.setText("Invalid guess. Please enter a single letter.");
+            return;
+        }
+
+        char guessedLetter = guess.charAt(0);
+        if (guessedLetters.contains(guessedLetter)) {
+            statusLabel.setText("You already guessed that letter.");
+            return;
+        }
+
+        guessedLetters.add(guessedLetter);
+        boolean correctGuess = false;
+
+        // Update displayWord with correct guesses
+        for (int i = 0; i < selectedWord.length(); i++) {
+            if (selectedWord.charAt(i) == guessedLetter) {
+                displayWord.setCharAt(i, guessedLetter);
+                correctGuess = true;
+            }
+        }
+
+        if (!correctGuess) {
+            guessesRemaining--;
+        }
+
+        if (displayWord.indexOf("_") == -1) {
+            statusLabel.setText("Congratulations! You've guessed the word.");
+        } else if (guessesRemaining <= 0) {
+            statusLabel.setText("Game over! The word was: " + selectedWord);
+        } else {
+            statusLabel.setText("Guesses remaining: " + guessesRemaining);
+        }
+
+        updateWordDisplay();
+        guessInput.clear();
+    }
+
+    private void updateWordDisplay() {
+        wordDisplay.setText(displayWord.toString());
     }
 
     @FXML
-    public void Search(KeyEvent e) throws IOException {
+    public void Search() throws IOException {
         String typed = inputTyped.getText().toLowerCase();
         List<Word> wordSearch = InitDictionary.search(typed);
         ObservableList<Word> tmp1 = FXCollections.observableArrayList();
@@ -85,12 +160,6 @@ public class ControllerSearchMode {
             listWord.setFixedCellSize(77.4);
         } else {
             listWord.getItems().clear();
-            definition.getChildren().clear();
-            relation.getChildren().clear();
-        }
-        if (e.getCode() == KeyCode.BACK_SPACE) {
-            definition.getChildren().clear();
-            relation.getChildren().clear();
         }
     }
 
@@ -111,16 +180,8 @@ public class ControllerSearchMode {
                 otherLines.append(line).append("\n");
             }
         }
-
-        if (!typed.isEmpty()) {
-            definition.getChildren().clear();
-            definition.getChildren().add(new Text(otherLines.toString()));
-            relation.getChildren().clear();
-            relation.getChildren().add(new Text(filteredLines.toString()));
-        } else {
-            definition.getChildren().clear();
-            relation.getChildren().clear();
-        }
+        definition.getChildren().clear();
+        definition.getChildren().add(new Text(otherLines.toString()));
     }
 
     @FXML
@@ -140,23 +201,8 @@ public class ControllerSearchMode {
                 otherLines.append(line).append("\n");
             }
         }
-        if (!typed.isEmpty()) {
-            definition.getChildren().clear();
-            definition.getChildren().add(new Text(otherLines.toString()));
-            relation.getChildren().clear();
-            relation.getChildren().add(new Text(filteredLines.toString()));
-        } else {
-            definition.getChildren().clear();
-            relation.getChildren().clear();
-        }
-    }
-
-    @FXML
-    private void HandleVoiceButtonClick() {
-        String typed = listWord.getSelectionModel().getSelectedItem();
-        if (typed != null && !typed.isEmpty()) {
-            TextToSpeech.voice(typed);
-        }
+        definition.getChildren().clear();
+        definition.getChildren().add(new Text(otherLines.toString()));
     }
 
     private void switchMode(String fxmlFile) {

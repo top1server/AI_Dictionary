@@ -18,11 +18,9 @@ public class WriteToFile {
             String line = sc.nextLine();
             bufferedWriter.write(line);
             bufferedWriter.newLine();
-
             // Close file
             bufferedWriter.close();
             fileWriter.close();
-            System.out.println("Successfully written to file.");
         } catch (IOException e) {
             System.out.println("Error: IO Exception when writing to txt!");
         }
@@ -37,7 +35,6 @@ public class WriteToFile {
             // Close file
             bufferedWriter.close();
             fileWriter.close();
-            System.out.println("Successfully written to file.");
         } catch (IOException e) {
             System.out.println("Error: IO Exception when writing to txt!");
         }
