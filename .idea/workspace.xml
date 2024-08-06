@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35b0b3c6-ceaf-4dcd-8ff1-c43a00b9c0a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerGameMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/GameMode.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/GameWhite.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/FileActivities/WriteToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/FileActivities/WriteToFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/Fundamental/TextToSpeech.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/Fundamental/TextToSpeech.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerAddMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerAddMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerEditMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerEditMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerSearchMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerSearchMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerTranslateMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/ControllerTranslateMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/GUI/SearchMode.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI/SearchMode.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/GUI/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/ai_dictionary/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/ai_dictionary/Run.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/txt/dictionary_add.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/txt/dictionary_add.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

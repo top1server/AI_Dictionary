@@ -20,4 +20,6 @@ module app.ai_dictionary {
     exports app.SourceCode.GUI.Controller;
     exports app.SourceCode.Fundamental;
     opens app.SourceCode.Fundamental to javafx.fxml;
+    exports app.ai_dictionary;
+    opens app.ai_dictionary to javafx.fxml;
 }

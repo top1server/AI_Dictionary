@@ -1,4 +1,4 @@
-package app.SourceCode.GUI.Controller;
+package app.ai_dictionary;
 
 import app.SourceCode.FileActivities.InitDictionary;
 import javafx.application.Application;
