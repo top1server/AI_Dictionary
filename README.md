@@ -38,7 +38,24 @@
 
 ## **Mode in app** 
 #### *Search Mode*
-![SearchMode](Mode/SearchMode.png)
+![Search Mode](Mode/SearchMode.png)
+
+#### *Add Mode*
+![Add Mode](Mode/AddMode.png)
+
+#### *Edit Mode*
+![Edit Mode](Mode/EditMode.png)
+
+#### *Translate Mode*
+![Translate Mode](Mode/TranslateMode.png)
+
+#### *Game Mode*
+![Game Mode](Mode/TranslateMode.png)
+
+
+
+
+
 
     
 
