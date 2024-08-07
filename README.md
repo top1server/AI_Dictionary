@@ -27,7 +27,7 @@
   * [Reference](#Reference)
 - [4. A Special Thanks To](#a-special-thanks-to)
 
-## **1. Description** 
+## **Description** 
 ### *App description and instruction* 
 
 - Video demo :https://youtu.be/1ERVIwFQSKk
