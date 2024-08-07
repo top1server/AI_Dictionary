@@ -24,6 +24,5 @@
 - [2. Modes in app](#modes-in-app)
 - [3. Features](#features)
     * [Inheritance hierarchy](#inheritance-hierarchy)
-      ![UML Diagram](UML.puml)
 
 
