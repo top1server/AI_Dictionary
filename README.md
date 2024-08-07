@@ -17,7 +17,7 @@
 ## ***III.Table of content***
 
 - [1. Description](#Description)
-    * [App description and instruction](#application-description-and-instruction)
+    * [App description and instruction](#app-description-and-instruction)
     * [Control](#control)
     * [Preview](#preview)
     * [Inheritance hierarchy](#inheritance-hierarchy)
