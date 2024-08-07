@@ -38,7 +38,7 @@
 
 ## **Mode in app** 
 #### *Search Mode*
-![SearchMode](/resources/image/SearchMode.png)
+![SearchMode](Mode/SearchMode.png)
 
     
 
