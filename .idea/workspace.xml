@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35b0b3c6-ceaf-4dcd-8ff1-c43a00b9c0a2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mode/AddMode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mode/EditMode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mode/GameMode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mode/SearchMode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mode/TranslateMode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/image/AddMode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/image/EditMode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/image/GameMode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/image/SearchMode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/image/TranslateMode.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
