@@ -10,8 +10,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class DictionaryManagement extends Dictionary {
-
-    public boolean cnt = false;
     /**
      * insert words from commandline into trie.
      */

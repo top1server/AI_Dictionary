@@ -12,6 +12,8 @@ public class InitDictionary extends DictionaryManagement {
     public InitDictionary() {
         dictionaryInit.insertFromFile_txt("src/main/resources/txt/dictionary.txt");
         dictionaryInit.insertFromFile_sql();
+        dictionaryInit.insertFromFile_txt("src/main/resources/txt/dictionary_add.txt");
+
     }
 
     public InitDictionary(String filePath) {

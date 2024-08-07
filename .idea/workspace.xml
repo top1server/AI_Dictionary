@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b0b3c6-ceaf-4dcd-8ff1-c43a00b9c0a2" name="Changes" comment="" />
+    <list default="true" id="35b0b3c6-ceaf-4dcd-8ff1-c43a00b9c0a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/UML.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/FileActivities/InitDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/FileActivities/InitDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/Fundamental/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/Fundamental/DictionaryManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/txt/dictionary_add.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/txt/dictionary_add.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +69,7 @@
     "Application.YandexTranslateExample.executor": "Run",
     "Application.test.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "true",
     "Repository.Attach.Sources": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -71,11 +77,11 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Java/project/freetts-1.2.2-bin/freetts-1.2/lib/mbrola.jar",
+    "last_opened_file_path": "D:/Java/project/AI_Dictionary/src/main/java/app/SourceCode",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
