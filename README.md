@@ -36,7 +36,7 @@
 ### *Inheritance hierarchy*
 ![UML Diagram](UML.png)
 
-## **Mode in app** 
+## **Modes in app** 
 #### *Search Mode*
 ![Search Mode](Mode/SearchMode.png)
 
