@@ -34,7 +34,7 @@
 - KeyBoard
 - Cursor
 ### *Inheritance hierarchy*
-![UML Diagram](images/UML.png)
+![UML Diagram](UML.png)
     
 
 
