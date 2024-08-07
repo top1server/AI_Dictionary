@@ -30,7 +30,7 @@
 ## **1. Description** 
 ### *App description and instruction* 
 
-- Video demo : https://youtu.be/Q2aN2Eg0Ftk
+- Video demo :https://youtu.be/1ERVIwFQSKk
 ### *Control* 
 
 - **Con trỏ chuột trái**: Chọn nút.
