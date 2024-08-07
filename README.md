@@ -62,6 +62,7 @@
 - Google Translate API
 - MySQL
 ### *Reference*
+- Trie & algorithm searching: https://cp-algorithms.com/
 - JavaFX tutorial
 - Build: https://www.youtube.com/watch?v=YVXu7tmmQ0M&list=PLlGZc17KPrVAKj3Tl1im5HN8Lh5nYTXyB
 - Read SQL JBDC 
