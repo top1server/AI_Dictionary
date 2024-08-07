@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35b0b3c6-ceaf-4dcd-8ff1-c43a00b9c0a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UML.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UML.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/FileActivities/InitDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/FileActivities/InitDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SourceCode/Fundamental/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SourceCode/Fundamental/DictionaryManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/txt/dictionary_add.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/txt/dictionary_add.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +74,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Java/project/AI_Dictionary/src/main/java/app/SourceCode",
+    "last_opened_file_path": "D:/Java/project/AI_Dictionary",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
