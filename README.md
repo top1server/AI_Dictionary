@@ -19,7 +19,6 @@
 - [Description](#description)
     * [App description and instruction](#app-description-and-instruction)
     * [Control](#control)
-    * [Preview](#preview)
     * [Inheritance hierarchy](#inheritance-hierarchy)
 - [2. Modes in app](#modes-in-app)
 - [3. See also](#see-also)
@@ -34,7 +33,8 @@
 ### *Control* 
 - KeyBoard
 - Cursor
-### *Preview*
+### *Inheritance hierarchy*
+![UML Diagram](images/UML.png)
     
 
 
