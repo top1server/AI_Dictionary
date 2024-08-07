@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35b0b3c6-ceaf-4dcd-8ff1-c43a00b9c0a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UML.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/txt/dictionary_add.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/txt/dictionary_add.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,38 +49,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Add_NewWordsController.executor": "Run",
-    "Application.Dictionary.executor": "Run",
-    "Application.GoogleTransAPI.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MySQLConnection.executor": "Run",
-    "Application.Run.executor": "Run",
-    "Application.SearchModeController.executor": "Run",
-    "Application.TextToSpeech.executor": "Run",
-    "Application.Trie.executor": "Run",
-    "Application.VN.executor": "Run",
-    "Application.ViettelTTSExample.executor": "Run",
-    "Application.YandexTranslateExample.executor": "Run",
-    "Application.test.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Java/project/AI_Dictionary",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Add_NewWordsController.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Dictionary.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GoogleTransAPI.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MySQLConnection.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Run.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SearchModeController.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TextToSpeech.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Trie.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VN.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ViettelTTSExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.YandexTranslateExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.test.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/project/AI_Dictionary&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Java\project\AI_Dictionary\src\main\resources\jar" />
