@@ -21,8 +21,8 @@
     * [Control](#control)
     * [Inheritance hierarchy](#inheritance-hierarchy)
 - [Modes in app](#modes-in-app)
-- [3. See also](#see-also)
-  * [Các kỹ thuật sử dụng](#các-kỹ-thuật-sử-dụng)
+- [See also](#see-also)
+  * [Used](#used)
   * [Reference](#Reference)
 - [4. A Special Thanks To](#a-special-thanks-to)
 
@@ -51,6 +51,25 @@
 
 #### *Game Mode*
 ![Game Mode](Mode/TranslateMode.png)
+
+## **Sea also** 
+### *Used*
+- Java (JDK 21)
+- JavaFX (Maven)
+- JavaFX scene builder 2.0
+- CSS
+- Trie data structure
+- FreeTTS (Voice)
+- Google Translate API
+- MySQL
+### *Reference*
+- JavaFX tutorial
+- Build: https://www.youtube.com/watch?v=YVXu7tmmQ0M&list=PLlGZc17KPrVAKj3Tl1im5HN8Lh5nYTXyB
+- Read SQL JBDC 
+- Picture: https://www.pinterest.com/
+- Remove/Edit picture: Paint & https://www.remove.bg/
+- ChatGPT
+
 
 
 
