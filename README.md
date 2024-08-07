@@ -16,7 +16,7 @@
 
 ## ***III.Table of content***
 
-- [1. Description](#description)
+- [1. Description](#Description)
     * [Application description and instruction](#application-description-and-instruction)
     * [Control](#control)
     * [Preview](#preview)
