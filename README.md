@@ -24,6 +24,6 @@
 - [2. Modes in app](#modes-in-app)
 - [3. Features](#features)
     * [Inheritance hierarchy](#inheritance-hierarchy)
-      https://lucid.app/lucidchart/3320818c-ad82-4aca-b055-0d19504aed74/edit?viewport_loc=-1291%2C-390%2C4122%2C2085%2CHWEp-vi-RSFO&invitationId=inv_f9547609-a972-4899-b1e2-d293d1a98721
+      ![UML Diagram](UML.puml)
 
 
