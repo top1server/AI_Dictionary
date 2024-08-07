@@ -32,11 +32,8 @@
 
 - Video demo :https://youtu.be/1ERVIwFQSKk
 ### *Control* 
-
-- **Con trỏ chuột trái**: Chọn nút.
-- **Con trỏ chuột phải**.
-- **các nút bấm trong game**: ra/vào các chế độ trong game và thoát game.
-
+- KeyBoard
+- Cursor
 ### *Preview*
     
 
