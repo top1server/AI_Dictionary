@@ -24,7 +24,6 @@
 - [See also](#see-also)
   * [Used](#used)
   * [Reference](#Reference)
-- [4. A Special Thanks To](#a-special-thanks-to)
 
 ## **Description** 
 ### *App description and instruction* 
@@ -54,7 +53,7 @@
 
 ## **Sea also** 
 ### *Used*
-- Java (JDK 21)
+- Java (JDK 21) & IDEA Intelliji
 - JavaFX (Maven)
 - JavaFX scene builder 2.0
 - CSS
@@ -69,7 +68,6 @@
 - Picture: https://www.pinterest.com/
 - Remove/Edit picture: Paint & https://www.remove.bg/
 - ChatGPT
-
 
 
 
