@@ -16,13 +16,28 @@
 
 ## ***III.Table of content***
 
-
 - [1. Description](#description)
     * [Application description and instruction](#application-description-and-instruction)
     * [Control](#control)
     * [Preview](#preview)
-- [2. Modes in app](#modes-in-app)
-- [3. Features](#features)
     * [Inheritance hierarchy](#inheritance-hierarchy)
+- [2. Modes in app](#modes-in-app)
+- [3. See also](#see-also)
+  * [Các kỹ thuật sử dụng](#các-kỹ-thuật-sử-dụng)
+  * [Reference](#Reference)
+- [4. A Special Thanks To](#a-special-thanks-to)
+
+## **1. Description** 
+### *App description and instruction* 
+
+- Video demo : https://youtu.be/Q2aN2Eg0Ftk
+### *Control* 
+
+- **Con trỏ chuột trái**: Chọn nút.
+- **Con trỏ chuột phải**.
+- **các nút bấm trong game**: ra/vào các chế độ trong game và thoát game.
+
+### *Preview*
+    
 
 
