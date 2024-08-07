@@ -38,7 +38,7 @@
 
 ## **Mode in app** 
 #### *Search Mode*
-![SearchMode](AI_Dictionary/src/main/resource/image/SearchMode.png)
+![SearchMode](image/SearchMode.png)
 
     
 
