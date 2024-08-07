@@ -20,7 +20,7 @@
     * [App description and instruction](#app-description-and-instruction)
     * [Control](#control)
     * [Inheritance hierarchy](#inheritance-hierarchy)
-- [2. Modes in app](#modes-in-app)
+- [Modes in app](#modes-in-app)
 - [3. See also](#see-also)
   * [Các kỹ thuật sử dụng](#các-kỹ-thuật-sử-dụng)
   * [Reference](#Reference)
@@ -35,6 +35,11 @@
 - Cursor
 ### *Inheritance hierarchy*
 ![UML Diagram](UML.png)
+
+## **Mode in app** 
+#### *Search Mode*
+![](/image/SearchMode.png)
+
     
 
 
