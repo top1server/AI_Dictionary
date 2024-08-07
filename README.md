@@ -51,7 +51,7 @@
 #### *Game Mode*
 ![Game Mode](Mode/TranslateMode.png)
 
-## **Sea also** 
+## **See also** 
 ### *Used*
 - Java (JDK 21) & IDEA Intelliji
 - JavaFX (Maven)
