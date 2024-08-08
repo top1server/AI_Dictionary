@@ -21,10 +21,9 @@
     * [Control](#control)
     * [Inheritance hierarchy](#inheritance-hierarchy)
 - [Modes in app](#modes-in-app)
-- [3. See also](#see-also)
-  * [Các kỹ thuật sử dụng](#các-kỹ-thuật-sử-dụng)
+- [See also](#see-also)
+  * [Used](#used)
   * [Reference](#Reference)
-- [4. A Special Thanks To](#a-special-thanks-to)
 
 ## **Description** 
 ### *App description and instruction* 
@@ -36,9 +35,45 @@
 ### *Inheritance hierarchy*
 ![UML Diagram](UML.png)
 
-## **Mode in app** 
+## **Modes in app** 
 #### *Search Mode*
-![SearchMode](/resources/image/SearchMode.png)
+![Search Mode](Mode/SearchMode.png)
+
+#### *Add Mode*
+![Add Mode](Mode/AddMode.png)
+
+#### *Edit Mode*
+![Edit Mode](Mode/EditMode.png)
+
+#### *Translate Mode*
+![Translate Mode](Mode/TranslateMode.png)
+
+#### *Game Mode*
+![Game Mode](Mode/TranslateMode.png)
+
+## **See also** 
+### *Used*
+- Java (JDK 21) & IDEA Intelliji
+- JavaFX (Maven)
+- JavaFX scene builder 2.0
+- CSS
+- Trie data structure
+- FreeTTS (Voice)
+- Google Translate API
+- MySQL
+### *Reference*
+- Trie & algorithm searching: https://cp-algorithms.com/
+- JavaFX tutorial
+- Build: https://www.youtube.com/watch?v=YVXu7tmmQ0M&list=PLlGZc17KPrVAKj3Tl1im5HN8Lh5nYTXyB
+- Read SQL JBDC 
+- Picture: https://www.pinterest.com/
+- Remove/Edit picture: Paint & https://www.remove.bg/
+- ChatGPT
+
+
+
+
+
 
     
 
