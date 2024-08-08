@@ -3,6 +3,7 @@ package app.SourceCode.GUI.Controller;
 import app.SourceCode.FileActivities.InitDictionary;
 import app.SourceCode.FileActivities.ReadFromFile;
 import app.SourceCode.FileActivities.WriteToFile;
+import app.SourceCode.Fundamental.Time;
 import app.SourceCode.Fundamental.Word;
 import javafx.animation.PauseTransition;
 import javafx.collections.FXCollections;
@@ -15,6 +16,7 @@ import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -103,6 +105,11 @@ public class ControllerAddMode {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlFile));
             Parent root = fxmlLoader.load();
+            AnchorPane anchorPane = (AnchorPane) root;
+            Time time = new Time();
+            AnchorPane.setBottomAnchor(time, 580.0);
+            AnchorPane.setRightAnchor(time, 10.0);
+            anchorPane.getChildren().add(time);
             Stage stage = (Stage) translateMode.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
