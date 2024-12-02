@@ -1,3 +1,4 @@
+My project got 10 point (practise part) of OOP
 # **ARTIFICIAL INTELLIGENCE DICTIONARY 🧠**
 
 ## ***I. Introduction***
